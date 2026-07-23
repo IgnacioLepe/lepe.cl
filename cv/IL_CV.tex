@@ -1,0 +1,231 @@
+%=======================================================================
+%  Ignacio Lepe — Curriculum Vitae
+%  Fully reproducible with pdflatex (no external font dependencies).
+%  Compile:  pdflatex IL_CV.tex   (run twice for links)
+%=======================================================================
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{newtxtext,newtxmath}        % Times-like serif
+\usepackage{textcomp}
+\usepackage[letterpaper,top=0.7in,bottom=0.7in,left=0.6in,right=0.6in]{geometry}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage[document]{ragged2e}
+
+\definecolor{linkblue}{RGB}{0,0,238}
+% underlined blue link (contact info, references)
+\newcommand{\link}[2]{\href{#1}{\textcolor{linkblue}{\underline{#2}}}}
+% title link: blue, no underline (paper titles -> mini-pages)
+\newcommand{\tlink}[2]{\href{#1}{\textcolor{linkblue}{#2}}}
+
+\pagestyle{empty}
+\frenchspacing
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% ---- structural macros --------------------------------------------------
+\newcommand{\cvsection}[1]{\vspace{9pt}{\bfseries #1}\par\vspace{2pt}\hrule\vspace{6pt}}
+\newcommand{\HL}[2]{\textbf{#1}\hfill\textbf{#2}\par}
+\newcommand{\RL}[2]{\textit{#1}\hfill\textit{#2}\par}
+\newcommand{\RR}[1]{\mbox{}\hfill\textit{#1}\par}
+\newcommand{\gap}{\vspace{7pt}}
+\newlist{cvitems}{itemize}{1}
+\setlist[cvitems]{leftmargin=1.6em,label=\textendash,topsep=1pt,itemsep=1pt,parsep=0pt}
+
+\begin{document}
+
+%------------------------------- Header ---------------------------------
+\begin{center}
+  {\LARGE\bfseries Ignacio Lepe}\\[3pt]
+  ilepe@fen.uchile.cl \textbullet\ \link{https://lepe.cl}{lepe.cl} \textbullet\ Tobin Center for Economic Policy, 87 Trumbull St, New Haven, CT 06511\\[2pt]
+  Last update: July 2026
+\end{center}
+
+\textbf{Fields:} Labor Economics, Economics of Education, and Market Design.
+
+%------------------------------- Education ------------------------------
+\cvsection{EDUCATION}
+
+\HL{Faculty of Business and Economics, University of Chile}{Santiago, Chile}
+\RL{M.Sc. in Economics}{2023 -- 2024}
+Grade: 6.2/7.0 (\textit{Maximum Distinction})
+\gap
+
+\HL{Faculty of Business and Economics, University of Chile}{Santiago, Chile}
+\RL{Commercial Engineering, B.Sc. in Economics}{2019 -- 2023}
+Grade: 6.2/7.0 (\textit{Maximum Distinction})\\
+Class rank: 98.2nd percentile of cohort (Circle of Excellence).
+
+%--------------------------- Research & Publications --------------------
+\cvsection{RESEARCH \& PUBLICATIONS}
+
+\textbf{Publications}
+\gap
+
+\tlink{https://lepe.cl/papers/education-spending.html}{Education Spending and Economic Growth: Short- and Long-Term Effects in a Global Panel}. With Arturo Galindo and Dante Contreras. \textit{Review of Development Economics}, 2026.
+\gap
+
+\tlink{https://lepe.cl/papers/inteligencia-artificial.html}{Inteligencia Artificial Generativa en Centros Educativos: Preparación Institucional y Competencias digitales en ICILS 2023}. With Christopher Neilson. \textit{Papeles de Economía Española}, Issue 184, FUNCAS, 2025.
+\gap
+
+\textbf{Working Papers}
+\gap
+
+\tlink{https://lepe.cl/papers/designing-smart-school-choice.html}{Designing Smart School Choice Recommendations: Heuristics for Sure Alternatives}. Master's thesis.
+\gap
+
+\tlink{https://lepe.cl/papers/heterogeneous-effects-school-day.html}{Heterogeneous Effects of Lengthening the School Day on Students' Academic Achievement: A Longitudinal Study of Full Day School Reform in Chile}. With Dante Contreras and Ignacio Riveros.
+\gap
+
+\textbf{Policy Reports}
+\gap
+
+\tlink{https://lepe.cl/papers/extended-school-day.html}{Extended School Day: Evidence, Implementation, Challenges and Recommendations}. Technical note N\textdegree{} IDB-TN-2792. With Dante Contreras.
+\gap
+
+\tlink{https://lepe.cl/papers/cost-analysis-ev.html}{Cost Analysis: Charging Infrastructure for Electric Vehicles}. Technical note ESA, Ministry of Energy. With Ignacio Rivas and Javier Contador.
+
+%--------------------------- Awards & Fellowships -----------------------
+\cvsection{AWARDS \& FELLOWSHIPS}
+
+Academic Excellence Scholarship, M.Sc. In Economics. FEN UCh.\hfill 2023 -- 2024\par
+Circle of excellence. FEN UCh.\ (x4)\hfill 2020 -- 2024\par
+High School Valedictorian.\hfill 2018\par
+
+%--------------------------- Research Experience ------------------------
+\cvsection{RESEARCH EXPERIENCE}
+
+\HL{Yale University}{New Haven, CT}
+\RL{Pre-Doctoral Fellow}{January 2026 -- Present}
+Tobin Center for Economic Policy and Economics Department. Advisor: Prof. Christopher A. Neilson
+\gap
+
+\HL{ConsiliumBots}{Santiago, Chile}
+\RL{Data Scientist \& RA}{July 2024 -- January 2026}
+Support multicountry RCTs, school choice interventions, and applied research with Prof. Christopher A. Neilson on education, economics, and policy.
+\gap
+
+\HL{Abdul Latif Jameel Poverty Action Lab}{Santiago, Chile}
+\RL{Senior Research Associate}{September 2024 -- July 2025}
+Lead analysis and coordination for education-focused RCTs in Latin America
+\gap
+
+\HL{Pontifical Catholic University of Chile}{Santiago, Chile}
+\RL{Research assistant}{April 2024 -- November 2024}
+\begin{cvitems}
+  \item ``Evaluation of the School Admission System: Analysis of the algorithm and its effects on school segregation''. Authors: María Isidora Palma, Gabriel Gutiérrez, Francisco Lagos \& Fernanda Ramírez.
+\end{cvitems}
+\gap
+
+\HL{Faculty of Economics and Business, University of Chile}{Santiago, Chile}
+\RL{Research Assistant at UCh and IDB, Professor Dante Contreras}{February 2023 -- December 2024}
+
+%--------------------------- Other Experience ---------------------------
+\cvsection{OTHER EXPERIENCE}
+
+\HL{International CORE Economics}{London, England}
+\RL{Consultant}{January 2023 -- January 2024}
+\begin{cvitems}
+  \item The Economy After COVID: Elaboration of chapters, references and applied exercises for undergraduate economics course text. Supervisor: Óscar Landerretche.
+\end{cvitems}
+\gap
+
+\HL{Central Bank of Chile}{Santiago, Chile}
+\RL{Intern}{January 2023 -- February 2023}
+\begin{cvitems}
+  \item Methodologies and Quantitative Analysis Group, Prospective Analysis and Risk Department, Financial Stability Management. Supervisor: David Coble.
+\end{cvitems}
+\gap
+
+\HL{Energy Sustainability Agency, Ministry of Energy}{Santiago, Chile}
+\RL{Intern}{July 2022 -- December 2022}
+\begin{cvitems}
+  \item Co-author of ``Cost Analysis: Charging Infrastructure for Electric Vehicles in Latin America 2022 version''.
+\end{cvitems}
+\gap
+
+\HL{LEXEN Constitution 2022}{Santiago, Chile}
+\RL{Assistant coordinator in the minutes preparation team}{July 2021 -- August 2022}
+
+%--------------------------- Teaching Experience ------------------------
+\cvsection{TEACHING EXPERIENCE}
+
+\HL{Graduate - Faculty of Economics and Business, University of Chile}{Santiago, Chile}
+\RL{Teaching Assistant Macroeconomics II (M.Sc. in Economics)}{July 2024 -- December 2024}
+professors Humberto Martínez \& Eugenia Andreasen
+\gap
+
+\HL{Undergraduate - Faculty of Economics and Business, University of Chile}{Santiago, Chile}
+\gap
+
+\RL{Teaching Assistant Econometrics I, Professor Valentina Paredes}{March 2024 -- July 2024}
+\gap
+
+\RL{Teaching Assistant Econometrics I, professors Valentina Paredes \& Paola Bordón}{March 2023 -- July 2023}
+\gap
+
+\RL{Teaching Assistant Macroeconomics III/Trade \& Growth, Professor Pablo García}{March 2023 -- July 2023}
+\gap
+
+\RL{Teaching Assistant Microeconomics III/Labor, Professors Dante Contreras \& Esteban Puentes}{March 2023 -- July 2023}
+\gap
+
+\RL{Teaching Assistant Statistics II, professors Eduardo Engel \& Juan Díaz.}{July 2021 -- December 2021}
+\RR{July 2022 -- December 2022}
+\gap
+
+\RL{Teaching Assistant Statistics I, professors Eduardo Engel \& Juan Díaz.}{March 2021 -- July 2021}
+\RR{March 2022 -- July 2022}
+\gap
+
+\RL{Teaching Assistant Introduction to Macroeconomics, Professor José de Gregorio.}{July 2021 -- July 2022}
+\gap
+
+\RL{Teaching Assistant Introduction to Microeconomics, Professor Andrés Gómez-Lobo.}{August 2020 -- December 2021}
+\gap
+
+\RL{Teaching Assistant Introduction to Microeconomics, Professor Óscar Landerretche.}{March 2021 -- July 2021}
+
+%--------------------------- Leadership & Service -----------------------
+\cvsection{LEADERSHIP \& SERVICE}
+
+\HL{UCh Commercial Engineering Student Council}{Santiago, Chile}
+\RL{Economics Students Delegate}{August 2020 -- October 2021}
+\gap
+
+\RL{Academic Secretary's Office}{August 2020 -- October 2021}
+
+%--------------------------- Conferences & Presentations ----------------
+\cvsection{CONFERENCES \& PRESENTATIONS}
+
+2026 Pre-Doctoral Economics Conference, Yale University. ``Opportunity Costs of Elite Careers and Fertility: Evidence from Admission Cutoffs in Chile'' (with Tamara Muñoz), presented by Tamara Muñoz. New Haven, CT. June, 2026.
+\gap
+
+Workshop on Economics of Education. Keynote speaker: Jesse Rothstein. Valle Nevado, Chile. August, 2025 (Attendee).
+\gap
+
+IDB Education Meeting -- Annual Research Brief (Presenter). IDB Headquarters, Washington D.C, US. October, 2024.
+\gap
+
+Workshop on Economics of Education. Keynote speaker: Miguel Urquiola. Valle Nevado, Chile. August, 2024 (Attendee).
+
+%--------------------------- Skills -------------------------------------
+\cvsection{SKILLS}
+
+\textbf{Programming:} Python, STATA, MATLAB, LaTeX, Excel (Advanced), R (Intermediate).
+\gap
+
+\textbf{Languages:} Spanish (native), English (fluent).
+
+%--------------------------- References ---------------------------------
+\cvsection{REFERENCES}
+
+Christopher A. Neilson, Professor of Economics and Global Affairs, Yale University and Faculty Research Fellow, National Bureau of Economic Research. \link{mailto:christopher.neilson@yale.edu}{christopher.neilson@yale.edu}
+\gap
+
+Dante Contreras, Professor in the Department of Economics at the Faculty of Business and Economics, University of Chile, and Deputy Director of the Center for the Study of Conflict and Social Cohesion, COES. \link{mailto:dcontrer@fen.uchile.cl}{dcontrer@fen.uchile.cl}
+
+\end{document}
