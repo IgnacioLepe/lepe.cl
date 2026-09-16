@@ -10,6 +10,7 @@ tools.html        Literature Finder (open-source paper search toolkit)
 papers/           One mini-page per paper (abstract, key figure, citation, links)
 cv/               IL_CV.tex (source), IL_CV.pdf (compiled), build notes in cv/README.md
 css/style.css     All styling
+js/analytics.js   Private GoatCounter stats (pageviews, downloads, outbound clicks)
 assets/           portrait.jpg · favicon.png · hero backgrounds · figures/ · fonts/
 404.html          Custom not-found page (served automatically by GitHub Pages)
 research/ tools/ resources/
