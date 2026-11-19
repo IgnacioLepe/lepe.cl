@@ -7,7 +7,6 @@ a standard TeX distribution.
 ## Files
 - `IL_CV.tex` — the source (edit this to update the CV)
 - `IL_CV.pdf` — the compiled PDF
-- `IL_CV_original.pdf` — the previous Word-exported version, kept for reference
 
 ## Build
 Requires TeX Live or MacTeX (packages: `newtx`, `geometry`, `enumitem`,
